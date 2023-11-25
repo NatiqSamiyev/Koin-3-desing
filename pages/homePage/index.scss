@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Laila:wght@700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700;900&display=swap");
+
+$color: #fff;
+
+.about-container {
+  width: 100%;
+  padding: 80px 186px 80px 145px;
+  min-height: 100vh;
+  background: $color;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    padding: 40px 41px 44px 70px;
+    background-color: chocolate;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 40px 19px 23px 16px;
+    background-color: darksalmon;
+  }
+
+  .image {
+    width: 446px;
+    height: 582px;
+    border-radius: 11px;
+    @media screen and (max-width: 1024px) {
+      width: 287.081px;
+      height: 374.621px;
+      margin-top: 36px;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .text-container {
+    width: 522px;
+    @media screen and (max-width: 1024px) {
+      width: 365px;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+      color: #000;
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130.5%;
+      @media screen and (max-width: 1024px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+    p {
+      margin-bottom: 16px;
+      color: #000;
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 158%;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+      }
+    }
+    li {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 40px;
+        height: 39.999px;
+      }
+      h2 {
+        margin-left: 17px;
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 158%;
+      }
+    }
+  }
+}
